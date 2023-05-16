@@ -231,6 +231,7 @@ clear all; close all; clc;
         %% Open Figures
         for i = 1:num_files
             openfig(sim_filenames{i});
+            pause(2.0) % Need this so figure is open before ax is called
             % Save Data
                 ax = gca;
                 PlotData(i).XData = ax.Children.XData;
