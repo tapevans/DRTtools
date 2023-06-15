@@ -10,7 +10,7 @@ clear all; close all; clc;
 %% Parameters
     FLAG.PlotAll = 1;
     FigArrange   = 1;
-    FLAG.UsingLaptop = 0; 
+    FLAG.UsingLaptop = 0; % The issue here was the scale of the monitor was not set to 100%
 
     foldername = 'Test';
     save_folderpath = [pwd filesep 'myResults' filesep foldername];
